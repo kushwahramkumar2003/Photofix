@@ -11,7 +11,7 @@ export const metadata: Metadata = {
       "Easily resize your images with our AI-powered tool. Adjust dimensions, maintain aspect ratio, and choose your preferred format.",
     images: [
       {
-        url: "/og-image-resize.jpg", // Make sure to add this image to your public folder
+        url: "/og-image-resize.jpg",
         width: 1200,
         height: 630,
         alt: "PhotoFix Image Resizing Tool",
