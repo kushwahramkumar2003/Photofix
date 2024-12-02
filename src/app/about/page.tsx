@@ -12,7 +12,6 @@ import { Zap, Image as ImageIcon, Sparkles, Users } from "lucide-react";
 export default function AboutPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      {/* Hero Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-background to-background/95">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col items-center space-y-4 text-center">
@@ -26,7 +25,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Mission Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
@@ -35,8 +33,8 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="text-muted-foreground text-lg">
-                At SnapForge, we're on a mission to democratize advanced image
-                editing capabilities. We believe that everyone should have
+                At SnapForge, we&apos;re on a mission to democratize advanced
+                image editing capabilities. We believe that everyone should have
                 access to powerful, AI-driven tools that can transform their
                 visual content without requiring years of expertise.
               </p>

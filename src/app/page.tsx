@@ -7,19 +7,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  ArrowRight,
-  Image,
-  Zap,
-  Sparkles,
-  Lock,
-  CreditCard,
-} from "lucide-react";
+import { ArrowRight, Image, Zap, Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center">
-      {/* Hero Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-b from-background to-background/95">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col items-center space-y-4 text-center">
@@ -53,7 +45,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Feature Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
@@ -61,6 +52,8 @@ export default function Home() {
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <FeatureCard
+              // disable lint next line
+              // eslint-disable-next-line @next/next/no-img-element
               icon={<Image className="h-10 w-10" />}
               title="Image Compression"
               description="Reduce file size without losing quality using our advanced AI compression algorithm"
@@ -79,7 +72,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
@@ -105,7 +97,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Overview Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
@@ -143,7 +134,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-primary/10 to-primary/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col items-center space-y-4 text-center">

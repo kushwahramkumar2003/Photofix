@@ -31,6 +31,7 @@
     "react-dom": "^18",
     "react-dropzone": "^14.3.5",
     "react-hook-form": "^7.53.2",
+    "react-image-crop": "^11.0.7",
     "sharp": "^0.33.5",
     "sonner": "^1.7.0",
     "tailwind-merge": "^2.5.5",

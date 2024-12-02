@@ -98,7 +98,6 @@ export function CompressionForm({
     formData.append("image", data.image);
 
     try {
-
       onSubmit(data);
     } catch (error) {
       console.error("Compression failed", error);
@@ -125,6 +124,9 @@ export function CompressionForm({
           />
           {imagePreview ? (
             <div className="relative">
+              {/* lint disable next line
+               */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={imagePreview}
                 alt="Image preview"

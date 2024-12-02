@@ -5,14 +5,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Image, Zap, Menu, X } from "lucide-react";
+import { Image, Zap, Menu } from "lucide-react";
 import { ModeToggle } from "./ui/mode-toggle";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -23,6 +18,7 @@ const navItems = [
 
 export function Header() {
   const pathname = usePathname();
+  // eslint-disable-next-line
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const NavItems = ({ mobile = false, onClick = () => {} }) => (
