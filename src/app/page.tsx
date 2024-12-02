@@ -143,7 +143,7 @@ export default function Home() {
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground text-lg sm:text-xl">
                 Join thousands of users who are already enhancing their images
-                with SnapForge.
+                with PhotoFix.
               </p>
             </div>
             <div className="space-x-4 mt-8">

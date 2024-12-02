@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import { ConvertToJpgForm } from "./components/ConvertToJpgForm";
 
 export const metadata: Metadata = {
-  title: "Convert to JPG | SnapForge",
+  title: "Convert to JPG | PhotoFix",
   description:
     "Convert PNG, GIF, TIF, PSD, SVG, WEBP, HEIC or RAW images to JPG format. Batch convert multiple images online.",
   openGraph: {
-    title: "Convert to JPG | SnapForge",
+    title: "Convert to JPG | PhotoFix",
     description:
       "Convert PNG, GIF, TIF, PSD, SVG, WEBP, HEIC or RAW images to JPG format. Batch convert multiple images online.",
     images: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: "/og-image-convert-jpg.jpg", // Make sure to add this image to your public folder
         width: 1200,
         height: 630,
-        alt: "SnapForge Convert to JPG Tool",
+        alt: "PhotoFix Convert to JPG Tool",
       },
     ],
   },

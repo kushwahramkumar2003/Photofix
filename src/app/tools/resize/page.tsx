@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import { ResizeImageForm } from "./components/ResizeImageForm";
 
 export const metadata: Metadata = {
-  title: "Resize Image | SnapForge",
+  title: "Resize Image | PhotoFix",
   description:
     "Easily resize your images with our AI-powered tool. Adjust dimensions, maintain aspect ratio, and choose your preferred format.",
   openGraph: {
-    title: "Resize Image | SnapForge",
+    title: "Resize Image | PhotoFix",
     description:
       "Easily resize your images with our AI-powered tool. Adjust dimensions, maintain aspect ratio, and choose your preferred format.",
     images: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: "/og-image-resize.jpg", // Make sure to add this image to your public folder
         width: 1200,
         height: 630,
-        alt: "SnapForge Image Resizing Tool",
+        alt: "PhotoFix Image Resizing Tool",
       },
     ],
   },

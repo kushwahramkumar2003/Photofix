@@ -26,13 +26,13 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Image Processing Tools | SnapForge",
+  title: "Image Processing Tools | PhotoFix",
   description:
     "Discover our wide range of AI-powered image processing tools. Compress, resize, crop, convert, edit, and enhance your images with ease.",
   keywords: [
     "image processing",
     "AI tools",
-    "SnapForge",
+    "PhotoFix",
     "compress image",
     "resize image",
     "crop image",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     "enhance image",
   ],
   openGraph: {
-    title: "Image Processing Tools | SnapForge",
+    title: "Image Processing Tools | PhotoFix",
     description:
       "Explore our comprehensive suite of AI-powered image processing tools. Transform your images with just a few clicks.",
     images: [
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         url: "/og-image-tools.jpg",
         width: 1200,
         height: 630,
-        alt: "SnapForge Image Processing Tools",
+        alt: "PhotoFix Image Processing Tools",
       },
     ],
   },

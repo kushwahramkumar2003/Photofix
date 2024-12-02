@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import { RotateImageForm } from "./components/RotateImageForm";
 
 export const metadata: Metadata = {
-  title: "Rotate Image | SnapForge",
+  title: "Rotate Image | PhotoFix",
   description:
     "Easily rotate your images with our AI-powered tool. Adjust orientation and flip images horizontally or vertically.",
   openGraph: {
-    title: "Rotate Image | SnapForge",
+    title: "Rotate Image | PhotoFix",
     description:
       "Easily rotate your images with our AI-powered tool. Adjust orientation and flip images horizontally or vertically.",
     images: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: "/og-image-rotate.jpg", // Make sure to add this image to your public folder
         width: 1200,
         height: 630,
-        alt: "SnapForge Image Rotation Tool",
+        alt: "PhotoFix Image Rotation Tool",
       },
     ],
   },

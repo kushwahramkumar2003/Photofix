@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import { RemoveBackgroundForm } from "./components/RemoveBackgroundForm";
 
 export const metadata: Metadata = {
-  title: "Remove Background | SnapForge",
+  title: "Remove Background | PhotoFix",
   description:
     "Cut out image backgrounds with exceptional quality. Remove the background of your JPG and PNG images easily.",
   openGraph: {
-    title: "Remove Background | SnapForge",
+    title: "Remove Background | PhotoFix",
     description:
       "Cut out image backgrounds with exceptional quality. Remove the background of your JPG and PNG images easily.",
     images: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: "/og-image-remove-background.jpg", // Make sure to add this image to your public folder
         width: 1200,
         height: 630,
-        alt: "SnapForge Background Removal Tool",
+        alt: "PhotoFix Background Removal Tool",
       },
     ],
   },

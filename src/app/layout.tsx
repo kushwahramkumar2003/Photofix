@@ -12,7 +12,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "SnapForge",
+  title: "PhotoFix",
   description: "AI-powered image editing and manipulation",
 };
 

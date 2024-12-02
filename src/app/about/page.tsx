@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
-              About SnapForge
+              About PhotoFix
             </h1>
             <p className="mx-auto max-w-[700px] text-muted-foreground text-lg sm:text-xl md:text-2xl mt-4">
               Empowering creativity through AI-powered image editing
@@ -33,7 +33,7 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="text-muted-foreground text-lg">
-                At SnapForge, we&apos;re on a mission to democratize advanced
+                At PhotoFix, we&apos;re on a mission to democratize advanced
                 image editing capabilities. We believe that everyone should have
                 access to powerful, AI-driven tools that can transform their
                 visual content without requiring years of expertise.
@@ -48,7 +48,7 @@ export default function AboutPage() {
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
                 src="/placeholder.svg?height=400&width=600"
-                alt="SnapForge Mission"
+                alt="PhotoFix Mission"
                 layout="fill"
                 objectFit="cover"
                 className="rounded-lg"
@@ -120,7 +120,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="flex flex-col items-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
-              Join the SnapForge Revolution
+              Join the PhotoFix Revolution
             </h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground text-lg sm:text-xl">
               Experience the future of image editing. Start transforming your

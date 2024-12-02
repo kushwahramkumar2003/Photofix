@@ -9,7 +9,7 @@ export function Footer() {
       <div className="px-8 py-8 md:py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div>
-            <h3 className="mb-4 text-lg font-semibold">SnapForge</h3>
+            <h3 className="mb-4 text-lg font-semibold">PhotoFix</h3>
             <p className="text-sm text-muted-foreground">
               Transform your images with AI-powered tools.
             </p>
@@ -66,7 +66,7 @@ export function Footer() {
         </div>
         <div className="mt-8 flex flex-col items-center justify-between border-t pt-8 md:flex-row">
           <p className="mb-4 text-sm text-muted-foreground md:mb-0">
-            © 2023 SnapForge. All rights reserved.
+            © 2023 PhotoFix. All rights reserved.
           </p>
           <div className="flex space-x-4">
             <Link

@@ -2,11 +2,11 @@ import { Metadata } from "next";
 import { CropImageForm } from "./components/CropImageForm";
 
 export const metadata: Metadata = {
-  title: "Crop Image | SnapForge",
+  title: "Crop Image | PhotoFix",
   description:
     "Crop JPG, PNG or GIF images by defining a rectangle in pixels. Cut your image online with precision.",
   openGraph: {
-    title: "Crop Image | SnapForge",
+    title: "Crop Image | PhotoFix",
     description:
       "Crop JPG, PNG or GIF images by defining a rectangle in pixels. Cut your image online with precision.",
     images: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: "/og-image-crop.jpg",
         width: 1200,
         height: 630,
-        alt: "SnapForge Image Cropping Tool",
+        alt: "PhotoFix Image Cropping Tool",
       },
     ],
   },
