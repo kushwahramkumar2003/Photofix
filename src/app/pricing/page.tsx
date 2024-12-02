@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import { PricingPlans } from "./components/pricing-plans";
 
 export const metadata: Metadata = {
-  title: "Pricing Plans | ImagePro SaaS",
+  title: "Pricing Plans | PhotoFix SaaS",
   description:
     "Choose the perfect plan for your image processing needs. From free tier to premium features, we have a plan that fits your requirements.",
   keywords:
     "image processing, SaaS pricing, AI image tools, photo editing subscription",
   openGraph: {
-    title: "Pricing Plans | ImagePro SaaS",
+    title: "Pricing Plans | PhotoFix SaaS",
     description: "Affordable image processing plans for all your needs",
-    url: "https://imagepro-saas.com/pricing",
-    siteName: "ImagePro SaaS",
+    url: "https://www.photofix.tech/pricing",
+    siteName: "PhotoFix SaaS",
     images: [
       {
-        url: "https://imagepro-saas.com/og-pricing.jpg",
+        url: "https://www.photofix.tech/og-pricing.jpg",
         width: 1200,
         height: 630,
-        alt: "ImagePro SaaS Pricing Plans",
+        alt: "PhotoFix SaaS Pricing Plans",
       },
     ],
     locale: "en_US",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pricing Plans | ImagePro SaaS",
+    title: "Pricing Plans | PhotoFix SaaS",
     description: "Affordable image processing plans for all your needs",
-    images: ["https://imagepro-saas.com/twitter-pricing.jpg"],
+    images: ["https://www.photofix.tech/twitter-pricing.jpg"],
   },
   robots: {
     index: true,
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  // canonical: "https://imagepro-saas.com/pricing",
+  // canonical: "https://PhotoFix-saas.com/pricing",
 };
 
 const pricingPlans = [

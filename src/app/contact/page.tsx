@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact Us | ImagePro SaaS",
+  title: "Contact Us | PhotoFix ",
   description:
     "Get in touch with our team for support, inquiries, or feedback about our image processing services.",
   openGraph: {
-    title: "Contact ImagePro SaaS",
+    title: "Contact PhotoFix ",
     description: "Reach out to us for any questions or support needs.",
     type: "website",
-    url: "https://www.photofix.tech//contact",
+    url: "https://www.photofix.tech/contact",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact ImagePro SaaS",
+    title: "Contact PhotoFix ",
     description: "Reach out to us for any questions or support needs.",
   },
 };

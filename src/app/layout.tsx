@@ -7,15 +7,79 @@ import { cn } from "@/lib/utils";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import Script from "next/script";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "PhotoFix",
-  description: "AI-powered image editing and manipulation",
+  metadataBase: new URL("https://www.photofix.tech"),
+  title: {
+    default: "PhotoFix - AI-powered Image Editing and Manipulation",
+    template: "%s | PhotoFix",
+  },
+  description:
+    "Transform your photos with PhotoFix's AI-powered image editing and manipulation tools. Enhance, retouch, and perfect your images effortlessly.",
+  keywords: [
+    "AI image editing",
+    "photo manipulation",
+    "image enhancement",
+    "AI photo tools",
+  ],
+  authors: [{ name: "PhotoFix Team" }],
+  creator: "PhotoFix",
+  publisher: "PhotoFix Inc.",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.photofix.tech",
+    siteName: "PhotoFix",
+    title: "PhotoFix - AI-powered Image Editing and Manipulation",
+    description:
+      "Transform your photos with PhotoFix's AI-powered image editing and manipulation tools.",
+    images: [
+      {
+        url: "https://www.photofix.tech/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "PhotoFix - AI Image Editing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PhotoFix - AI-powered Image Editing",
+    description: "Transform your photos with PhotoFix's AI-powered tools.",
+    images: ["https://www.photofix.tech/twitter-image.jpg"],
+    creator: "@photofix",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
+  manifest: "/site.webmanifest",
+  alternates: {
+    canonical: "https://www.photofix.tech",
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +89,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="canonical" href="https://www.photofix.tech" />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -45,6 +112,24 @@ export default function RootLayout({
           <SpeedInsights />
           <Analytics />
         </ThemeProvider>
+        <Script id="schema-script" type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "PhotoFix",
+              "url": "https://www.photofix.tech",
+              "description": "AI-powered image editing and manipulation tools",
+              "applicationCategory": "PhotographyApplication",
+              "operatingSystem": "Web",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              }
+            }
+          `}
+        </Script>
       </body>
     </html>
   );

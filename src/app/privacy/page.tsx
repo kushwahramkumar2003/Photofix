@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | PhotoFix SaaS",
+  title: "Privacy Policy | PhotoFix",
   description:
-    "Learn about how PhotoFix SaaS collects, uses, and protects your personal information.",
+    "Learn about how PhotoFix collects, uses, and protects your personal information.",
   openGraph: {
-    title: "PhotoFix SaaS Privacy Policy",
+    title: "PhotoFix Privacy Policy",
     description:
       "Our Privacy Policy explains how we handle your personal data.",
     type: "website",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PhotoFix SaaS Privacy Policy",
+    title: "PhotoFix Privacy Policy",
     description:
       "Our Privacy Policy explains how we handle your personal data.",
   },
@@ -25,10 +25,10 @@ export default function PrivacyPage() {
       <h1 className="text-4xl font-bold text-center mb-8">Privacy Policy</h1>
       <div className="prose prose-lg mx-auto">
         <p>
-          At PhotoFix SaaS, we are committed to protecting your privacy and
-          ensuring the security of your personal information. This Privacy
-          Policy outlines our practices concerning the collection, use, and
-          disclosure of your data.
+          At PhotoFix, we are committed to protecting your privacy and ensuring
+          the security of your personal information. This Privacy Policy
+          outlines our practices concerning the collection, use, and disclosure
+          of your data.
         </p>
 
         <h2>1. Information We Collect</h2>
