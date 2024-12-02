@@ -16,7 +16,6 @@ import {
 import { Slider } from "@/components/ui/slider";
 import { Upload, Image as ImageIcon, Settings2, X } from "lucide-react";
 import { z } from "zod";
-import { compressImage } from "../actions";
 
 const CompressImageSchema = z.object({
   image: z.instanceof(File).optional(),

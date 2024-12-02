@@ -35,7 +35,6 @@ export function CompressionResult({
       link.href = downloadUrl;
       link.download = fileName || "compressed-image";
 
-
       document.body.appendChild(link);
       link.click();
 

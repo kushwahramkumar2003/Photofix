@@ -11,15 +11,17 @@ import { CompressionForm } from "./components/compression-form";
 import { CompressionResult } from "./components/compression-result";
 import z from "zod";
 
-const CompressImageSchema = z.object({
+//disable nextlint nextline
+// eslint-disable-next-line
+const CompressImageSchema = {
   image: z.instanceof(File).optional(),
   quality: z.number().min(1).max(100).default(80),
   format: z.enum(["jpeg", "png", "webp"]).default("jpeg"),
   width: z.number().positive().optional(),
   height: z.number().positive().optional(),
-});
+};
 
-type CompressImageInput = z.infer<typeof CompressImageSchema>;
+type CompressImageInput = z.infer<z.ZodObject<typeof CompressImageSchema>>;
 
 export default function CompressImagePage() {
   const [isCompressing, setIsCompressing] = useState(false);
@@ -47,7 +49,7 @@ export default function CompressImagePage() {
           description: compressionResult.error,
         });
       }
-    } catch (error) {
+    } catch {
       toast.error("An error occurred", {
         description: "Please try again later",
       });
