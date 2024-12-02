@@ -66,7 +66,7 @@ export function Footer() {
         </div>
         <div className="mt-8 flex flex-col items-center justify-between border-t pt-8 md:flex-row">
           <p className="mb-4 text-sm text-muted-foreground md:mb-0">
-            © 2023 PhotoFix. All rights reserved.
+            © 2024 PhotoFix. All rights reserved.
           </p>
           <div className="flex space-x-4">
             <Link
