@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.photofix.tech
+
+# Sitemaps
+Sitemap: https://www.photofix.tech/sitemap.xml
