@@ -8,6 +8,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Script from "next/script";
+import { Toaster } from "sonner";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -113,6 +114,7 @@ export default function RootLayout({
         >
           <div className="flex flex-col min-h-screen">
             <Header />
+            <Toaster richColors position="top-right" />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>

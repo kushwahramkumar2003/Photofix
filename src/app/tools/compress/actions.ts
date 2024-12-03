@@ -52,7 +52,6 @@ export async function compressImage(
   const { quality, format, width, height } = result.data;
 
   try {
-    // Read and compress image
     const buffer = Buffer.from(await image.arrayBuffer());
     let sharpInstance = sharp(buffer);
 
@@ -64,10 +63,8 @@ export async function compressImage(
       quality,
     }).toBuffer();
 
-    // Generate unique filename
     const fileName = `compressed/${uuidv4()}.${format}`;
 
-    // Upload to S3
     const uploadParams = {
       Bucket: BUCKET_NAME,
       Key: fileName,
@@ -77,7 +74,6 @@ export async function compressImage(
 
     await s3Client.send(new PutObjectCommand(uploadParams));
 
-    // Construct CloudFront URL
     const cloudFrontUrl = `${CLOUDFRONT_DOMAIN}/${fileName}`;
 
     return {

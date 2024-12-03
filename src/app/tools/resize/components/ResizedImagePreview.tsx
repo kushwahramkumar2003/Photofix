@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import axios from "axios";
+import { toast } from "sonner";
 
 interface ResizedImagePreviewProps {
   url: string;
@@ -37,7 +38,8 @@ export function ResizedImagePreview({ url }: ResizedImagePreviewProps) {
       }, 100);
     } catch (error) {
       console.error("Download failed:", error);
-      alert("Failed to download image. Please try again.");
+      toast.error("Failed to download image. Please try again.");
+      // alert("Failed to download image. Please try again.");
     }
   };
   return (

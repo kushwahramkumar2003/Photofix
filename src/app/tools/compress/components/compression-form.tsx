@@ -16,6 +16,7 @@ import {
 import { Slider } from "@/components/ui/slider";
 import { Upload, Image as ImageIcon, Settings2, X } from "lucide-react";
 import { z } from "zod";
+import { toast } from "sonner";
 
 const CompressImageSchema = z.object({
   image: z.instanceof(File).optional(),
@@ -61,7 +62,8 @@ export function CompressionForm({
       const file = event.target.files?.[0];
       if (file) {
         if (!file.type.startsWith("image/")) {
-          alert("Please upload a valid image file");
+          toast.error("Please upload a valid image file");
+          // alert("Please upload a valid image file");
           return;
         }
 
@@ -89,7 +91,8 @@ export function CompressionForm({
   const handleFormSubmit = async (data: CompressImageInput) => {
     console.log("sumbitting", data);
     if (!data.image) {
-      alert("Please select an image first");
+      toast.error("Please select an image first");
+      // alert("Please select an image first");
       return;
     }
 
@@ -101,7 +104,8 @@ export function CompressionForm({
       onSubmit(data);
     } catch (error) {
       console.error("Compression failed", error);
-      alert("Image compression failed");
+      toast.error("Image compression failed");
+      // alert("Image compression failed");
     }
   };
 
