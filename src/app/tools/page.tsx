@@ -102,6 +102,14 @@ const toolCategories = [
         icon: <Image className="h-6 w-6" aria-label="Convert from JPG Icon" />,
         href: "/tools/convert-from-jpg",
       },
+      {
+        name: "HEIC to JPG",
+        description: "Convert HEIC images to JPG format",
+        icon: (
+          <Image className="h-6 w-6" aria-label="Convert HEIC to JPG Icon" />
+        ),
+        href: "/tools/heic-to-jpg",
+      },
     ],
   },
   {

@@ -1,34 +1,9 @@
-# robots.txt for https://www.photofix.tech
-
+# *
 User-agent: *
 Allow: /
-Allow: /about
-Allow: /login
-Allow: /signup
-Allow: /pricing
-Allow: /tools
-Allow: /blog
-Allow: /contact
-Allow: /terms
-Allow: /privacy
 
-# Disallow admin and user-specific pages
-Disallow: /admin/
-Disallow: /user/
-Disallow: /account/
+# Host
+Host: https://www.photofix.tech
 
-# Disallow API endpoints
-Disallow: /api/
-
-# Disallow search results pages
-Disallow: /search
-
-# Crawl-delay directive (optional, use cautiously)
-# Crawl-delay: 10
-
-# Sitemap location
+# Sitemaps
 Sitemap: https://www.photofix.tech/sitemap.xml
-
-# Additional sitemaps (if applicable)
-# Sitemap: https://www.photofix.tech/blog-sitemap.xml
-# Sitemap: https://www.photofix.tech/tools-sitemap.xml
