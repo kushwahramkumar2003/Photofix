@@ -91,6 +91,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="canonical" href="https://www.photofix.tech" />
+        {process.env.NODE_ENV === "production" && (
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4733613514580686"
+            crossOrigin="anonymous"
+          ></script>
+        )}
       </head>
       <body
         className={cn(
