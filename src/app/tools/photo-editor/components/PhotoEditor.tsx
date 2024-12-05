@@ -102,7 +102,7 @@ const PhotoEditor: React.FC<PhotoEditorProps> = ({
             width: "100%",
             height: "700px",
           },
-          menuBarPosition: "bottom",
+          menuBarPosition: "right",
         },
         cssMaxWidth: 1000,
         cssMaxHeight: 700,
