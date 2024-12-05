@@ -8,8 +8,35 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Zap, ImageIcon, Sparkles, Users } from "lucide-react";
+import {
+  Zap,
+  ImageIcon,
+  Sparkles,
+  Users,
+  Github,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Facebook,
+  Globe,
+} from "lucide-react";
 import Script from "next/script";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+interface TeamMemberCardProps {
+  name: string;
+  role: string;
+  bio: string;
+  avatarSrc?: string;
+  socialLinks?: {
+    twitter?: string;
+    linkedin?: string;
+    github?: string;
+    instagram?: string;
+    facebook?: string;
+    website?: string;
+  };
+}
 
 export const metadata: Metadata = {
   title: "About PhotoFix - AI-Powered Image Editing Platform",
@@ -154,21 +181,18 @@ export default function AboutPage() {
             >
               Meet Our Team
             </h2>
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="flex justify-center items-center">
               <TeamMemberCard
-                name="Alex Johnson"
+                name="Ramkumar kushwah"
                 role="Founder & CEO"
-                bio="Visionary leader with a passion for AI and image processing"
-              />
-              <TeamMemberCard
-                name="Samantha Lee"
-                role="Chief Technology Officer"
-                bio="AI expert driving our technological innovations"
-              />
-              <TeamMemberCard
-                name="Michael Chen"
-                role="Head of Product"
-                bio="User experience enthusiast ensuring our tools are intuitive and powerful"
+                bio="Visionary leader with a passion for Full Stack Development and Web3."
+                socialLinks={{
+                  github: "https://github.com/kushwahramkumar2003",
+                  linkedin: "https://linkedin.com/in/ramkumar9301",
+                  twitter: "https://x.com/ramkumar_9301",
+                  instagram: "https://instagram.com/ram_kumar9301",
+                  website: "https://ramkumar-dev.me",
+                }}
               />
             </div>
           </div>
@@ -253,24 +277,102 @@ function FeatureCard({
   );
 }
 
-function TeamMemberCard({
+export function TeamMemberCard({
   name,
   role,
   bio,
-}: {
-  name: string;
-  role: string;
-  bio: string;
-}) {
+  avatarSrc = "https://avatars.githubusercontent.com/u/68776478?v=4",
+  socialLinks = {},
+}: TeamMemberCardProps) {
+  const { twitter, linkedin, github, instagram, facebook, website } =
+    socialLinks;
+
   return (
-    <Card className="relative overflow-hidden border-primary/10 bg-background/50 backdrop-blur supports-[backdrop-filter]:bg-background/50">
-      <CardHeader>
-        <div className="w-24 h-24 rounded-full bg-primary/10 mx-auto mb-4"></div>
+    <Card className="relative overflow-hidden border-primary/10 bg-background/50 backdrop-blur supports-[backdrop-filter]:bg-background/50 w-80 transition-all duration-300 hover:shadow-lg">
+      <CardHeader className="pb-2">
+        <div className="w-24 h-24 rounded-full bg-primary/10 mx-auto mb-4 flex justify-center items-center">
+          <Avatar className="w-full h-full border-2 border-primary/20">
+            <AvatarImage src={avatarSrc} alt={`${name}'s avatar`} />
+            <AvatarFallback>
+              {name
+                .split(" ")
+                .map((n: string) => n[0])
+                .join("")
+                .toUpperCase()}
+            </AvatarFallback>
+          </Avatar>
+        </div>
         <CardTitle className="text-xl text-center">{name}</CardTitle>
-        <CardDescription className="text-center">{role}</CardDescription>
+        <CardDescription className="text-center font-medium">
+          {role}
+        </CardDescription>
       </CardHeader>
+
       <CardContent>
-        <p className="text-muted-foreground text-center">{bio}</p>
+        <p className="text-muted-foreground text-center mb-4">{bio}</p>
+
+        <div className="flex justify-center space-x-4 pt-2 border-t border-primary/10">
+          {github && (
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+          )}
+          {twitter && (
+            <a
+              href={twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Twitter className="w-5 h-5" />
+            </a>
+          )}
+          {linkedin && (
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+          )}
+          {instagram && (
+            <a
+              href={instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+          )}
+          {facebook && (
+            <a
+              href={facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
+          )}
+          {website && (
+            <a
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Globe className="w-5 h-5" />
+            </a>
+          )}
+        </div>
       </CardContent>
     </Card>
   );
