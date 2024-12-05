@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "d2kuj5x2i47j2r.cloudfront.net",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        pathname: "/**",
+      },
     ],
   },
 };
