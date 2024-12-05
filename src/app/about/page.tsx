@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AboutPage() {
+export default function Page() {
   return (
     <>
       <div className="flex flex-col items-center justify-center">
@@ -277,7 +277,7 @@ function FeatureCard({
   );
 }
 
-export function TeamMemberCard({
+function TeamMemberCard({
   name,
   role,
   bio,
