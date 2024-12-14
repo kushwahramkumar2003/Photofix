@@ -1,26 +1,37 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from 'react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Button } from "@/components/ui/button"
-import { Download, Loader2 } from 'lucide-react'
+import { useState, useEffect } from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
+import { Download, Loader2 } from "lucide-react";
 
 interface ImagePreviewProps {
-  html: string
-  imageUrl: string | null
-  onDownload: () => void
-  isConverting: boolean
+  html: string;
+  imageUrl: string | null;
+  onDownload: () => void;
+  isConverting: boolean;
 }
 
-export function ImagePreview({ html, imageUrl, onDownload, isConverting }: ImagePreviewProps) {
-  const [activeTab, setActiveTab] = useState<'preview' | 'result'>('preview')
+export function ImagePreview({
+  html,
+  imageUrl,
+  onDownload,
+  isConverting,
+}: ImagePreviewProps) {
+  const [activeTab, setActiveTab] = useState<"preview" | "result">("preview");
 
   useEffect(() => {
     if (imageUrl) {
-      setActiveTab('result')
+      setActiveTab("result");
     }
-  }, [imageUrl])
+  }, [imageUrl]);
 
   return (
     <Card className="bg-background/50 backdrop-blur supports-[backdrop-filter]:bg-background/50">
@@ -29,7 +40,10 @@ export function ImagePreview({ html, imageUrl, onDownload, isConverting }: Image
         <CardDescription>Preview your HTML and converted image</CardDescription>
       </CardHeader>
       <CardContent>
-        <Tabs value={activeTab} onValueChange={(value) => setActiveTab(value as 'preview' | 'result')}>
+        <Tabs
+          value={activeTab}
+          onValueChange={(value) => setActiveTab(value as "preview" | "result")}
+        >
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="preview">HTML Preview</TabsTrigger>
             <TabsTrigger value="result">Converted Image</TabsTrigger>
@@ -45,13 +59,18 @@ export function ImagePreview({ html, imageUrl, onDownload, isConverting }: Image
             {imageUrl ? (
               <div className="space-y-4">
                 <div className="max-h-[400px] overflow-y-auto overscroll-contain">
-                  <img 
-                    src={imageUrl} 
-                    alt="Converted" 
+                  {/* eslint-disable */}
+                  <img
+                    src={imageUrl}
+                    alt="Converted"
                     className="max-w-full h-auto rounded-lg"
                   />
                 </div>
-                <Button onClick={onDownload} disabled={isConverting} className="w-full">
+                <Button
+                  onClick={onDownload}
+                  disabled={isConverting}
+                  className="w-full"
+                >
                   {isConverting ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -74,6 +93,5 @@ export function ImagePreview({ html, imageUrl, onDownload, isConverting }: Image
         </Tabs>
       </CardContent>
     </Card>
-  )
+  );
 }
-

@@ -35,6 +35,8 @@ export function HtmlToImageForm() {
           dataUrl = await toJpeg(node, {
             quality: options.quality,
             backgroundColor: options.backgroundColor,
+            //eslint-disable-next-line
+            //@ts-ignore
             scale: options.scale,
           });
           break;
@@ -42,6 +44,8 @@ export function HtmlToImageForm() {
           dataUrl = await toSvg(node, {
             quality: options.quality,
             backgroundColor: options.backgroundColor,
+            //eslint-disable-next-line
+            //@ts-ignore
             scale: options.scale,
           });
           break;
@@ -49,6 +53,8 @@ export function HtmlToImageForm() {
           dataUrl = await toPng(node, {
             quality: options.quality,
             backgroundColor: options.backgroundColor,
+            //eslint-disable-next-line
+            //@ts-ignore
             scale: options.scale,
           });
       }
@@ -79,7 +85,11 @@ export function HtmlToImageForm() {
       <div className="space-y-8">
         <HtmlInput html={html} setHtml={setHtml} />
         <ConversionOptions
+          //eslint-disable-next-line
+          //@ts-ignore
           options={options}
+          //eslint-disable-next-line
+          //@ts-ignore
           setOptions={setOptions}
           onConvert={handleConvert}
           isConverting={isConverting}

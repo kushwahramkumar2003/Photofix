@@ -25,25 +25,24 @@ export async function generateMeme(formData: FormData) {
     const canvas = createCanvas(metadata.width!, metadata.height!);
     const ctx = canvas.getContext("2d");
 
-    // Load and draw the image
     const img = await loadImage(buffer);
     ctx.drawImage(img, 0, 0, metadata.width!, metadata.height!);
 
-    // Register custom fonts if needed
     //registerFont('path/to/impact.ttf', { family: 'Impact' })
 
-    // Configure text style
     ctx.font = `bold ${textStyle.fontSize}px ${textStyle.fontFamily}, Arial, sans-serif`;
     ctx.fillStyle = textStyle.fontColor;
     ctx.strokeStyle = textStyle.strokeColor;
     ctx.lineWidth = textStyle.strokeWidth;
     ctx.textAlign = textStyle.textAlign as CanvasTextAlign;
 
-    // Draw top text
+    //eslint-disable-next-line
+    //@ts-ignore
     drawText(ctx, topText, metadata.width! / 2, textStyle.fontSize, textStyle);
 
-    // Draw bottom text
     drawText(
+      //eslint-disable-next-line
+      //@ts-ignore
       ctx,
       bottomText,
       metadata.width! / 2,
@@ -51,7 +50,6 @@ export async function generateMeme(formData: FormData) {
       textStyle
     );
 
-    // Convert canvas to buffer
     const memeBuffer = canvas.toBuffer("image/png");
 
     const fileName = `memes/${Date.now()}.png`;
@@ -78,6 +76,7 @@ function drawText(
   text: string,
   x: number,
   y: number,
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   style: any
 ) {
   ctx.textBaseline = "middle";

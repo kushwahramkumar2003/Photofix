@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       "Create hilarious memes with our easy-to-use meme generator. Add custom text, images, and effects to make your memes stand out.",
     images: [
       {
-        url: "/og-image-meme-generator.jpg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "SnapForge Meme Generator Tool",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "Meme Generator | SnapForge",
     description:
       "Create hilarious memes with our easy-to-use meme generator. Add custom text, images, and effects to make your memes stand out.",
-    images: ["/og-image-meme-generator.jpg"],
+    images: ["/og-image.jpg"],
     creator: "@snapforge",
   },
 };
