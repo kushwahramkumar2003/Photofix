@@ -90,6 +90,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <meta
+        name="google-adsense-account"
+        content="ca-pub-4733613514580686"
+      ></meta>
       <head>
         <link rel="canonical" href="https://www.photofix.in.net" />
         {process.env.NODE_ENV === "production" && (
