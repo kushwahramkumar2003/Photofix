@@ -52,11 +52,11 @@ export const metadata: Metadata = {
     title: "About PhotoFix - AI-Powered Image Editing",
     description:
       "Discover the story and team behind PhotoFix, your go-to AI image editing platform.",
-    url: "https://www.photofix.tech/about",
+    url: "https://www.photofix.in.net/about",
     siteName: "PhotoFix",
     images: [
       {
-        url: "https://www.photofix.tech/og-about.jpg",
+        url: "https://www.photofix.in.net/og-about.jpg",
         width: 1200,
         height: 630,
         alt: "About PhotoFix",
@@ -70,11 +70,11 @@ export const metadata: Metadata = {
     title: "About PhotoFix - AI-Powered Image Editing",
     description:
       "Discover the story and team behind PhotoFix, your go-to AI image editing platform.",
-    images: ["https://www.photofix.tech/twitter-about.jpg"],
+    images: ["https://www.photofix.in.net/twitter-about.jpg"],
     creator: "@photofix",
   },
   alternates: {
-    canonical: "https://www.photofix.tech/about",
+    canonical: "https://www.photofix.in.net/about",
   },
 };
 
@@ -224,15 +224,15 @@ export default function Page() {
             "@type": "AboutPage",
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": "https://www.photofix.tech/about",
+              "@id": "https://www.photofix.in.net/about",
             },
             name: "About PhotoFix",
             description:
               "Learn about PhotoFix, the revolutionary AI-powered image editing platform. Discover our mission, features, and the team behind our innovative technology.",
-            url: "https://www.photofix.tech/about",
+            url: "https://www.photofix.in.net/about",
             image: {
               "@type": "ImageObject",
-              url: "https://www.photofix.tech/og-about.jpg",
+              url: "https://www.photofix.in.net/og-about.jpg",
               width: 1200,
               height: 630,
             },
@@ -241,7 +241,7 @@ export default function Page() {
               name: "PhotoFix",
               logo: {
                 "@type": "ImageObject",
-                url: "https://www.photofix.tech/logo.png",
+                url: "https://www.photofix.in.net/logo.png",
                 width: 600,
                 height: 60,
               },

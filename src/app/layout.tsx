@@ -17,7 +17,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.photofix.tech"),
+  metadataBase: new URL("https://www.photofix.in.net"),
   title: {
     default: "PhotoFix - AI-powered Image Editing and Manipulation",
     template: "%s | PhotoFix",
@@ -41,14 +41,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.photofix.tech",
+    url: "https://www.photofix.in.net",
     siteName: "PhotoFix",
     title: "PhotoFix - AI-powered Image Editing and Manipulation",
     description:
       "Transform your photos with PhotoFix's AI-powered image editing and manipulation tools.",
     images: [
       {
-        url: "https://www.photofix.tech/og-image.jpg",
+        url: "https://www.photofix.in.net/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "PhotoFix - AI Image Editing",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PhotoFix - AI-powered Image Editing",
     description: "Transform your photos with PhotoFix's AI-powered tools.",
-    images: ["https://www.photofix.tech/twitter-image.jpg"],
+    images: ["https://www.photofix.in.net/twitter-image.jpg"],
     creator: "@photofix",
   },
   robots: {
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   alternates: {
-    canonical: "https://www.photofix.tech",
+    canonical: "https://www.photofix.in.net",
   },
 };
 
@@ -91,7 +91,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://www.photofix.tech" />
+        <link rel="canonical" href="https://www.photofix.in.net" />
         {process.env.NODE_ENV === "production" && (
           <script
             async
@@ -127,7 +127,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebApplication",
               "name": "PhotoFix",
-              "url": "https://www.photofix.tech",
+              "url": "https://www.photofix.in.net",
               "description": "AI-powered image editing and manipulation tools",
               "applicationCategory": "PhotographyApplication",
               "operatingSystem": "Web",

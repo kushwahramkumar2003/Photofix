@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: "Transform your images with AI-powered tools",
     images: [
       {
-        url: "https://www.photofix.tech/og-image.jpg",
+        url: "https://www.photofix.in.net/og-image.jpg",
         width: 1200,
         height: 630,
       },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PhotoFix - AI-Powered Image Editing",
     description: "Transform your images with AI-powered tools",
-    images: ["https://www.photofix.tech/twitter-image.jpg"],
+    images: ["https://www.photofix.in.net/twitter-image.jpg"],
   },
 };
 
@@ -225,7 +225,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "PhotoFix",
-            url: "https://www.photofix.tech",
+            url: "https://www.photofix.in.net",
             description: "AI-powered image editing and enhancement tools",
             applicationCategory: "PhotographyApplication",
             offers: {

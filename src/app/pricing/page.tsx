@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pricing Plans | PhotoFix SaaS",
     description: "Affordable image processing plans for all your needs",
-    url: "https://www.photofix.tech/pricing",
+    url: "https://www.photofix.in.net/pricing",
     siteName: "PhotoFix SaaS",
     images: [
       {
-        url: "https://www.photofix.tech/og-pricing.jpg",
+        url: "https://www.photofix.in.net/og-pricing.jpg",
         width: 1200,
         height: 630,
         alt: "PhotoFix SaaS Pricing Plans",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pricing Plans | PhotoFix SaaS",
     description: "Affordable image processing plans for all your needs",
-    images: ["https://www.photofix.tech/twitter-pricing.jpg"],
+    images: ["https://www.photofix.in.net/twitter-pricing.jpg"],
   },
   robots: {
     index: true,

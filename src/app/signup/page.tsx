@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     title: "Join PhotoFix - AI Image Editing Made Easy",
     description:
       "Sign up for PhotoFix and unlock the power of AI in your image editing process.",
-    url: "https://www.photofix.tech/signup",
+    url: "https://www.photofix.in.net/signup",
     siteName: "PhotoFix",
     images: [
       {
-        url: "https://www.photofix.tech/og-signup.jpg",
+        url: "https://www.photofix.in.net/og-signup.jpg",
         width: 1200,
         height: 630,
         alt: "PhotoFix Signup Page",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Join PhotoFix - AI Image Editing Made Easy",
     description:
       "Sign up for PhotoFix and unlock the power of AI in your image editing process.",
-    images: ["https://www.photofix.tech/twitter-signup.jpg"],
+    images: ["https://www.photofix.in.net/twitter-signup.jpg"],
     creator: "@photofix",
   },
 };
@@ -228,7 +228,7 @@ export default function SignupPage() {
             name: "Sign Up for PhotoFix",
             description:
               "Create your PhotoFix account and start transforming your images with our advanced AI-powered editing tools.",
-            url: "https://www.photofix.tech/signup",
+            url: "https://www.photofix.in.net/signup",
             mainEntity: {
               "@type": "WebApplication",
               name: "PhotoFix",

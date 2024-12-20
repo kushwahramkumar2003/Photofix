@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Contact PhotoFix ",
     description: "Reach out to us for any questions or support needs.",
     type: "website",
-    url: "https://www.photofix.tech/contact",
+    url: "https://www.photofix.in.net/contact",
   },
   twitter: {
     card: "summary_large_image",

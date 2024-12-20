@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description:
       "Our Privacy Policy explains how we handle your personal data.",
     type: "website",
-    url: "https://www.photofix.tech/privacy",
+    url: "https://www.photofix.in.net/privacy",
   },
   twitter: {
     card: "summary_large_image",

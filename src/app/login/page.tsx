@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     title: "Login to PhotoFix",
     description:
       "Access your PhotoFix account and unleash your creativity with AI-powered image editing.",
-    url: "https://www.photofix.tech/login",
+    url: "https://www.photofix.in.net/login",
     siteName: "PhotoFix",
     images: [
       {
-        url: "https://www.photofix.tech/og-login.jpg",
+        url: "https://www.photofix.in.net/og-login.jpg",
         width: 1200,
         height: 630,
         alt: "PhotoFix Login Page",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Login to PhotoFix",
     description:
       "Access your PhotoFix account and unleash your creativity with AI-powered image editing.",
-    images: ["https://www.photofix.tech/twitter-login.jpg"],
+    images: ["https://www.photofix.in.net/twitter-login.jpg"],
     creator: "@photofix",
   },
 };
@@ -200,7 +200,7 @@ export default function LoginPage() {
             name: "Login to PhotoFix",
             description:
               "Sign in to your PhotoFix account and start editing your images with our AI-powered tools.",
-            url: "https://www.photofix.tech/login",
+            url: "https://www.photofix.in.net/login",
             mainEntity: {
               "@type": "WebApplication",
               name: "PhotoFix",

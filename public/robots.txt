@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.photofix.tech
+Host: https://www.photofix.in.net
 
 # Sitemaps
-Sitemap: https://www.photofix.tech/sitemap.xml
+Sitemap: https://www.photofix.in.net/sitemap.xml

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description:
       "Our Terms of Service outline the rules for using our image processing platform.",
     type: "website",
-    url: "https://www.photofix.tech/terms",
+    url: "https://www.photofix.in.net/terms",
   },
   twitter: {
     card: "summary_large_image",
