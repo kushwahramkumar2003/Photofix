@@ -26,6 +26,7 @@ import {
   Wand2,
   Layers,
   Sparkles,
+  File,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -145,6 +146,14 @@ const toolCategories = [
         description: "Convert Apple's HEIC format to widely-supported JPG",
         icon: <Layers className="h-8 w-8 text-teal-600" />,
         href: "/tools/heic-to-jpg",
+        difficulty: "Easy",
+        eta: "1-2 minutes",
+      },
+      {
+        name: "IMG to PDF",
+        description: "Create PDF documents from image files with ease",
+        icon: <File className="h-8 w-8 text-yellow-600" />,
+        href: "/tools/image-to-pdf",
         difficulty: "Easy",
         eta: "1-2 minutes",
       },
