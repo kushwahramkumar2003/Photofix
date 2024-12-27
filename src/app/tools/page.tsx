@@ -27,6 +27,7 @@ import {
   Layers,
   Sparkles,
   File,
+  GalleryHorizontalEnd,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -154,6 +155,14 @@ const toolCategories = [
         description: "Create PDF documents from image files with ease",
         icon: <File className="h-8 w-8 text-yellow-600" />,
         href: "/tools/image-to-pdf",
+        difficulty: "Easy",
+        eta: "1-2 minutes",
+      },
+      {
+        name: "PDF to IMG's",
+        description: "Extract images from PDF documents in various formats",
+        icon: <GalleryHorizontalEnd className="h-8 w-8 text-yellow-600" />,
+        href: "/tools/pdf-to-images",
         difficulty: "Easy",
         eta: "1-2 minutes",
       },
