@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     title: "PhotoFix - AI-powered Image Editing",
     description: "Transform your photos with PhotoFix's AI-powered tools.",
     images: ["https://www.photofix.in.net/twitter-image.jpg"],
-    creator: "@photofix",
+    creator: "@ramkumar_9301",
   },
   robots: {
     index: true,
