@@ -66,8 +66,6 @@ PhotoFix is a revolutionary AI-powered image processing web application, exclusi
      - AVIF
      - HEIF/HEIC
 
-[Previous features content continued...]
-
 ## 🛠️ Technologies Used
 
 ### Frontend Architecture
@@ -82,8 +80,6 @@ graph TD
     F --> G[API Routes]
 ```
 
-[Previous technologies content continued...]
-
 ## 🚀 Getting Started
 
 ### System Requirements
@@ -96,13 +92,11 @@ graph TD
 | Node.js     | v18.0.0 | v20.0.0+    |
 | PostgreSQL  | v13.0.0 | v15.0.0+    |
 
-[Previous installation content continued...]
-
 ## 📜 Legal Notice
 
 ### Proprietary License and Copyright
 
-This software is protected under international copyright laws. All rights reserved to Photofix Pvt. Ltd. and Rajesh Kumar.
+This software is protected under international copyright laws. All rights reserved to Photofix Pvt. Ltd. and Ramkumar kushwah.
 
 **Strictly Prohibited:**
 
@@ -114,11 +108,9 @@ This software is protected under international copyright laws. All rights reserv
 
 ### Intellectual Property Protection
 
-- Patent Pending: [Patent Application Number]
 - Registered Trademarks:
   - PhotoFix™
   - Photofix®
-  - [Additional trademarks]
 
 ### Confidentiality Notice
 
@@ -141,8 +133,6 @@ This software contains trade secrets and proprietary information of Photofix Pvt
 - ISO 27001 certified
 - SOC 2 Type II certified
 
-[Previous sections continued...]
-
 ## 📞 Support
 
 ### Official Support Channels
@@ -161,7 +151,7 @@ This software contains trade secrets and proprietary information of Photofix Pvt
 
 ## 📅 Changelog
 
-### Version 1.0.0 (December 27, 2023)
+### Version 1.0.0 (December 27, 2024)
 
 - Initial release
 - Core feature set implementation
@@ -169,16 +159,12 @@ This software contains trade secrets and proprietary information of Photofix Pvt
 - User authentication system
 - Cloud storage integration
 
-[Rest of changelog...]
-
 ## ❓ FAQ
 
 <details>
 <summary>What makes PhotoFix different from other image processing tools?</summary>
 PhotoFix utilizes proprietary AI algorithms developed by our team to deliver unmatched image processing quality and speed. Our unique approach combines multiple AI models for optimal results.
 </details>
-
-[Additional FAQ items...]
 
 ---
 
